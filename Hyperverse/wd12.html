@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYPERVERSE</title>
+    <link rel="icon" href="images/logo6.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+  
+
+    <style>
+        body
+        {
+            background: fixed;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .box
+        {
+            display: flex;            
+        }
+        .two
+        {
+            padding-left: 10px;
+        }
+        .three
+        {
+            padding-left: 30px;
+        }
+        h1
+        {
+            color: indigo;
+            font-family: 'Fugaz One', cursive;
+        }
+        h2
+        {
+            color: blueviolet;
+            font-family: 'Merienda', cursive;
+        }
+        
+        h5
+        {
+            padding-left: 20px;
+        }
+        select
+        {
+            background-color: orange;
+            border-radius: 10px;
+        }
+        button
+        {
+          border-radius: 10px;
+          background-color: burlywood;
+          color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one">
+          <table>
+            <tr>
+              <td>
+                <div class="evo">
+                  <img src="images/womendress_12.png" width="150px" height="150px" class="ms0" onclick="Image('ms_0')">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="evo">
+                  <img src="images/wd12.1.png" width="150px" height="150px" class="ms1" onclick="Image('ms_1')">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="evo">
+                  <img src="images/wd12.2.png" width="150px" height="150px" class="ms2" onclick="Image('ms_2')">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="evo">
+                  <img src="images/wd12.3.png" width="150px" height="150px" class="ms3" onclick="Image('ms_3')">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      
+        <div class="two">
+          <span><img src="images/logo6.png" width="600px" height="625px" class="output"></span>
+        </div>
+
+        <div class="three">
+            <H1>women Gown</H1>
+            <h2>Product details:</h2>
+            <h5>
+                <p>Product Dimensions : 0.5 x 0.5 x 0.5 cm; 500 Grams</p>
+                <p>Date First Available : 20 May 2023</p>
+                <p>Manufacturer :  Amazon Brand - Symbol</p>
+                <p>ASIN :  B08YYXNTZZ</p>
+                <p>Item model number :  AW17MFS31</p>
+                <p>Country of Origin  :  India</p>
+                <p>Department  :  Men</p>
+                <p>Packer :  CLOUDTAIL INDIA PRIVATE LIMITED</p>
+                <p>Item Weight  :  500 g</p>
+                <p>Item Dimensions LxWxH  :  5 x 5 x 5 Millimeters</p>
+                <p>Generic Name  :  Kurta </p>
+                <p>Best Sellers Rank : #46 in Clothing & Accessories</p>
+            </h5>
+            
+            <p><label>CLOTH SIZE</label>
+              <select>
+                  <option value="SIZE">NIL</option>
+                  <option value="36">SIZE 36</option>
+                  <option value="38">SIZE 38</option>
+                  <option value="40">SIZE 40</option>
+                  <option value="42">SIZE 42</option>
+                  <option value="44">SIZE 44</option>
+              </select>
+            </p>
+
+            <p><label>PAYMENT MODE</label>
+               <select>
+                  <option value="SIZE">NIL</option>
+                  <option value="36">ONLINE PAYMENT</option>
+                  <option value="38">CREDIT CARD</option>
+                  <option value="40">DEBIT CARD</option>
+                  <option value="42">CASH ON DELIVERY</option>
+                  <option value="44">ORGAN DONATION</option>
+               </select>
+             </p>
+             
+        <h4>PRICE:- ₹ 999/-</h4>
+        <button id="buyButton" class="buy">BUY</button>
+            
+       </div>
+      </div>
+
+    <script>
+         
+  function Image(zero) 
+  {
+    let img = zero.toLowerCase();
+    let show;
+    switch (img) 
+    {
+      case "ms_0":
+        show = "images/womendress_12.png";
+        break;
+      case "ms_1":
+        show = "images/wd12.1.png";
+        break;
+      case "ms_2":
+        show = "images/wd12.2.png";
+        break;
+      case "ms_3":
+        show = "images/wd12.3.png";
+        break;
+      default:
+        show = "images/logo6.png";
+    }
+    document.querySelector(".output").src = show;
+  }
+
+  const buyButton = document.getElementById('buyButton');
+  buyButton.addEventListener('click', function() 
+  {
+    buyButton.style.backgroundColor = 'green'; // Change the background color to red
+  });
+    </script>
+</body>
+</html>

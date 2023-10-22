@@ -1,0 +1,208 @@
+
+
+.title
+{
+  background-color:snow;
+  font-family: 'Rammetto One', cursive;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  
+}
+.tabs
+{
+    padding-left: 1100px;
+}
+button
+{
+    background-color: #f6f7fb;
+    border: none;
+    font-family: 'Yatra One', cursive;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+button:hover
+{
+    color: rgb(72, 8, 246);
+}
+
+.imgs 
+{
+    width: 100px;
+    height: 500px;
+    padding-left: 500px;
+    background-repeat: no-repeat;
+    background-size: 300px 500px;
+    animation: animate infinite 10s;
+}
+
+@keyframes animate 
+{
+            20% 
+            {
+                background-image: url('images/mensShirt_1.jpg');
+            }
+            40% 
+            {
+                background-image: url('images/mensShirt_2.jpg');
+            }
+            60% 
+            {
+                background-image: url('images/mensShirt_3.jpg');
+            }
+            80% 
+            {
+                background-image: url('images/mensShirt_4.jpg');
+            }   
+            100% 
+            {
+                background-image: url('images/mensShirt_5.png');
+            }
+}
+.moving
+{
+            display: inline-block;
+            margin-left: 120px; /* Adjusted margin */
+}
+
+
+h1
+{
+    font-family: 'Kaushan Script', cursive;
+    color: #000080;
+}
+h2
+{
+    font-family: 'Fugaz One', cursive;
+    color: hotpink;
+}
+h5
+{
+    padding-left: 250px;
+}
+.shop
+{
+    background-color: orange;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1.0);
+    
+}
+.shop:hover
+{
+    color: gold;
+    background-color: black;
+    transition: 0.7s ease;
+}
+
+.woman
+{
+    width: 100px;
+    height: 500px;
+    padding-left: 500px;
+    background-repeat: no-repeat;
+    background-size: 300px 600px;
+    animation: womandress infinite 10s;
+}
+
+@keyframes womandress 
+{
+    20% 
+    {
+        background-image: url('images/womendress_1.png');
+    }
+    40% 
+    {
+        background-image: url('images/womandress_2.png');
+    }
+    60% 
+    {
+        background-image: url('images/womandress_3.jpg');
+    }
+    80% 
+    {
+        background-image: url('images/womandress_4.png');
+    }   
+    100% 
+    {
+        background-image: url('images/womandress_5.jpg');
+    }
+}
+
+center
+{
+    font-size: 25px;
+    font-family: 'Merienda', cursive;
+    color: #000080;
+}
+
+.extra
+{
+    padding-left: 100px;
+}
+
+
+
+#registration-popup 
+{
+  display: none;
+  position: fixed;
+  padding: 25px;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  box-shadow: 3px 6px rgb(255, 200, 0);
+  background-color: black;
+  color: yellow;
+}
+
+.registration-page {
+  display: none;
+}
+
+.registration-page.show {
+  display: block;
+}
+
+
+
+.registration-page label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.registration-page input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.registration-page button[type="submit"],
+.registration-page button[type="button"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.registration-page button[type="submit"]:hover,
+.registration-page button[type="button"]:hover {
+  background-color: #45a049;
+}
+
+.accountForm
+{
+    font-family: 'Rammetto One', cursive;
+    color: bisque;
+    font-size: 18px;
+}
+
+
+
+
+  

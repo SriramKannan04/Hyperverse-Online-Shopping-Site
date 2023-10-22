@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>testing 2</title>
+    <link rel="icon" href="images/logo6.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        .heading
+        {
+            display: flex;
+            justify-content: space-between;
+            background-color: snow;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+            flex-flow: wrap-reverse;
+        
+        }
+        li
+        {
+            list-style: none;
+            padding: 0 20px;
+        }
+        ul
+        {
+            display: flex;
+        }
+        .navigation
+        {
+            background-color: #f6f7fb;
+            border: none;
+            font-family: 'Yatra One', cursive;
+            cursor: pointer;
+            transition: 0.4s ease; 
+            font-size: 15px;
+        }
+        .navigation:hover
+        {
+            color: rgb(89, 32, 242);
+        }
+        .title 
+        {
+            font-size: 20px;
+            font-family: 'Rammetto One', cursive;
+        }
+
+        .imgs 
+        {
+           width: 100px;
+           height: 500px;
+           padding-left: 500px;
+           background-repeat: no-repeat;
+           background-size: 300px 500px;
+           animation: animate infinite 10s;
+        }
+        @keyframes animate 
+        {
+            20% 
+            {
+                background-image: url('images/mensShirt_1.jpg');
+            }
+            40% 
+            {
+                background-image: url('images/mensShirt_2.jpg');
+            }
+            60% 
+            {
+                background-image: url('images/mensShirt_3.jpg');
+            }
+            80% 
+            {
+                background-image: url('images/mensShirt_4.jpg');
+            }   
+            100% 
+            {
+                background-image: url('images/mensShirt_5.png');
+            }
+        }
+        .moving
+        {
+            display: inline-block;
+            margin-left: 120px; /* Adjusted margin */
+        }
+ 
+        h1
+       {
+         font-family: 'Kaushan Script', cursive;
+         color: #000080;
+       }
+       h2
+       {
+           font-family: 'Fugaz One', cursive;
+           color: hotpink;
+       }
+       h5
+       {
+            padding-left: 250px;
+       }
+       .shop
+       {
+          background-color: orange;
+          border-radius: 10px;
+          border: none;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 1.0);
+    
+       }
+       .shop:hover
+       {
+          color: gold;
+          background-color: black;
+          transition: 0.7s ease;
+       }
+      
+       .woman
+       {
+          width: 100px;
+          height: 500px;
+          padding-left: 500px;
+          background-repeat: no-repeat;
+          background-size: 300px 600px;
+          animation: womandress infinite 10s;
+       }
+
+       @keyframes womandress 
+       {
+    20% 
+    {
+        background-image: url('images/womendress_1.png');
+    }
+    40% 
+    {
+        background-image: url('images/womandress_2.png');
+    }
+    60% 
+    {
+        background-image: url('images/womandress_3.jpg');
+    }
+    80% 
+    {
+        background-image: url('images/womandress_4.png');
+    }   
+    100% 
+    {
+        background-image: url('images/womandress_5.jpg');
+    }
+       }
+
+    center
+    {
+        font-size: 25px;
+        font-family: 'Merienda', cursive;
+        color: #000080;
+    }
+    .extra
+    {
+        padding-left: 100px;
+    }
+    </style>
+</head>
+
+<section class="heading">
+    <div class="title">
+        <p>HYPERVERSE</p>
+    </div>   
+    <nav>
+      <ul>
+        <li><a href="#"><button class="navigation">ACCOUNT</button></a></li>
+        <li><a href="#"><button class="navigation">UPCOMING</button></a></li>
+        <li><a href="#"><button class="navigation">ORDERS</button></a></li>
+      </ul>
+    </nav> 
+</section>
+
+<br><br>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <h1>Experience Unparalleled Comfort and Class with Our Men's Shirts!</h1>
+                <h2>Procure at the most affordable rate</h2>
+                <h5><a href="mensShirt.html"><button class="shop">AVAIL HERE</button></a></h5>
+            </td>
+            <td><span class="moving"><div class="imgs"></div></span></td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table>
+        <tr>
+            
+            <td><span class="moving2"></span><div class="woman"></div></span></td>
+            <td>
+                <h1>Unlock Confidence and Beauty... step into Fashion-forward Women's Dresses Today!</h1>
+                <h2>Access at the greatest value</h2>
+                <h5><a href="womensdress.html"><button class="shop">AVAIL HERE</button></a></h5>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <section class="extra">
+        <center>Uncover a Variety of Supplementary Items in Our Catalog</center>
+        <br><br>
+        <table cellspacing="20">
+            <tr>
+                <td>
+                    <div>
+                         <a href="#"><img src="images/sunglasses.png" width="300px" height="200px"></a>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                         <a href="#"><img src="images/watch.png" width="200px" height="400px"></a>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                         <a href="#"><img src="images/shoe.png" width="300px" height="200px"></a>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                         <a href="#"><img src="images/sandals.png" width="300px" height="200px"></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>    
+</body>
+
+</html>
+
+<!--Did you change height: 75px; to be min-height: 75px; in the .left, .center, .right rule in style.css?-->

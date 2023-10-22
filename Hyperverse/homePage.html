@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HYPERVERSE</title>
+    <link rel="icon" href="images/logo6.png">
+    <link rel="stylesheet" href="homePage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<section>
+    <div class="title">
+        <p>HYPERVERSE  <span class="tabs"> <span class="spacing"><button id="registration-button">ACCOUNT</button></span>  <span class="spacing"><a href="#"><button>UPCOMING</button></a></span> <span class="spacing"><a href="#"></a><button>ORDERS</button></a></span> </span></p>
+    </div>    
+</section>
+
+
+<body class="blur">
+    <table>
+        <tr>
+            <td>
+                <h1>Experience Unparalleled Comfort and Class with Our Men's Shirts!</h1>
+                <h2>Procure at the most affordable rate</h2>
+                <h5><a href="mensShirt.html"><button class="shop">AVAIL HERE</button></a></h5>
+            </td>
+            <td><span class="moving"><div class="imgs"></div></span></td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table>
+        <tr>
+            
+            <td><span class="moving2"></span><div class="woman"></div></span></td>
+            <td>
+                <h1>Unlock Confidence and Beauty... step into Fashion-forward Women's Dresses Today!</h1>
+                <h2>Access at the greatest value</h2>
+                <h5><a href="womensdress.html"><button class="shop">AVAIL HERE</button></a></h5>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <section class="extra">
+        <center>Uncover a Variety of Supplementary Items in Our Catalog</center>
+        <br><br>
+        <table cellspacing="20">
+            <tr>
+                <td>
+                    <div>
+                         <a href="sunglasses.html"><img src="images/sunglasses.png" width="300px" height="200px"></a>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                         <a href="Watches.HTML"><img src="images/watch.png" width="200px" height="400px"></a>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                         <a href="MensShoe.html"><img src="images/shoe.png" width="300px" height="200px"></a>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                         <a href="#"><img src="images/sandals.png" width="300px" height="200px"></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>    
+
+    <div id="registration-popup">
+        <form id="page1" class="registration-page">
+          <center><h2 class="accountForm">Contact Infomation</h2></center>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+          
+          <label for="email">Email ID:</label>
+          <input type="email" id="email" required>
+          
+          <label for="mobile">Mobile Number:</label>
+          <input type="tel" id="mobile" required>
+          
+          <button type="button" id="next-page">Next</button>
+        </form>
+        
+        <form id="page2" class="registration-page">
+          <center><h2 class="accountForm">Address</h2></center>
+          <label for="door-no">Door No:</label>
+          <input type="text" id="door-no">
+          
+          <label for="street">Street Name:</label>
+          <input type="text" id="street">
+          
+          <label for="area">Area Name:</label>
+          <input type="text" id="area">
+          
+          <label for="city">City:</label>
+          <input type="text" id="city" required>
+          
+          <label for="state">State:</label>
+          <input type="text" id="state" required>
+          
+          <label for="pincode">Pincode:</label>
+          <input type="text" id="pincode" required>
+          
+          
+          <button type="button" id="prev-page">Previous</button>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!--
+        .registration-button .blur
+         {
+            filter: blur(5px);
+            pointer-events: none;
+         }
+      -->
+      
+
+      <script>
+
+document.getElementById("registration-button").addEventListener("click", function() 
+{
+  document.getElementById("registration-popup").style.display = "block";
+  document.getElementById("page1").classList.add("show");
+  //document.body.classList.add("blur");
+});
+
+document.getElementById("next-page").addEventListener("click", function() 
+{
+  document.getElementById("page1").classList.remove("show");
+  document.getElementById("page2").classList.add("show");
+});
+
+document.getElementById("prev-page").addEventListener("click", function() 
+{
+  document.getElementById("page2").classList.remove("show");
+  document.getElementById("page1").classList.add("show");
+});
+
+document.getElementById("registration-popup").addEventListener("submit", function(e) 
+{
+  e.preventDefault(); // Prevent form submission for this example
+  
+  // Retrieve form values from page 1
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var mobile = document.getElementById("mobile").value;
+  
+  // Retrieve form values from page 2
+  var doorNo = document.getElementById("door-no").value;
+  var street = document.getElementById("street").value;
+  var area = document.getElementById("area").value;
+  var city = document.getElementById("city").value;
+  var state = document.getElementById("state").value;
+  var pincode = document.getElementById("pincode").value;
+  
+  // Do something with the form values (e.g., send them to a server)
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Mobile:", mobile);
+  console.log("Door No:", doorNo);
+  console.log("Street:", street);
+  console.log("Area:", area);
+  console.log("City:", city);
+  console.log("State:", state);
+  console.log("Pincode:", pincode);
+  
+  // Hide the registration popup after submission
+  document.getElementById("registration-popup").style.display = "none";
+});
+      </script>
+
+    
+</body>
+
+
+</html>
+
+
+
